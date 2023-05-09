@@ -79,3 +79,56 @@ main .card:nth-child(4){
 main .card:nth-child(5){
     border-top: 5px solid var(--fouthary-color);
 }
+
+@media (min-width: 1000px){
+    main{
+        display: grid;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "overview overview overview "
+        "supervisor team calculator"
+        ". karma .";
+        margin: 0;
+
+    }
+
+    .card{
+        margin: .75rem;
+        width: 21.875rem;
+    }
+
+    .card p{
+        padding: 0 25px 0 0 ;
+    }
+
+    .overview{
+        grid-area: overview;
+        width: 31.25rem;
+        justify-self: center;
+    }
+
+    .overview h1, .overview h2{
+        font-size: 32px;
+    }
+
+    .supervisor{
+        grid-area: supervisor;
+        position: relative;
+        top: 50%;
+    }
+
+    .team{
+        grid-area: team;
+    }
+
+    .karma{
+        grid-area: karma;
+    }
+
+    .calculator{
+        grid-area: calculator;
+        position: relative;
+        top: 50%;
+    }
+}
