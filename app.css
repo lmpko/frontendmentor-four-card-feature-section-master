@@ -20,3 +20,62 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+main{
+    margin: 5rem 1.875rem;
+}
+
+h1 {
+    color: var(--fifthary-color);
+}
+
+p{
+    color: var(--sixthary-color);
+}
+
+.overview{
+    text-align: center;
+    padding-bottom: 3.125rem;
+}
+
+.overview h1{
+    color: var(--sixthary-color);
+    font-weight: 400;
+    margin:0;
+}
+
+.overview h2{
+    font-weight: 600;
+    color: var(--fifthary-color);
+    margin: 0;
+}
+
+.card{
+    border-radius: .625rem;
+    padding: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.5625rem 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.card img{
+    align-self: flex-end;
+}
+
+main .card:nth-child(2){
+    border-top: 5px solid var(--secondary-color);
+}
+
+main .card:nth-child(3){
+    border-top: 5px solid var(--primary-color);
+}
+
+main .card:nth-child(4){
+    border-top: 5px solid var(--tertiary-color);
+}
+
+main .card:nth-child(5){
+    border-top: 5px solid var(--fouthary-color);
+}
